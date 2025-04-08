@@ -1,0 +1,49 @@
+<h1>Linear Regression Notes:</h1>
+<p>Week 2 Notes</>
+
+Linear Regression is a Linear regression is a supervised learning algorithm used for predicting a continuous output variable based on one or more input features.
+
+It assumes a linear relationship between the independent variables (features) and the dependent variable
+
+y is the predicted value and Xn are the input features
+
+<h2> When to use Linear Regression</h2>
+<ul>
+    <li> The relationship between inputs and outputs are related linearly</li>
+    <li> you want interpretability - how much each predictor influes outcomes</li>
+    <li> Need a good baseline model</li>
+</ul>
+
+<h2>Figuring out if there is a linear relationship </h2>
+<ul>
+    <li> visualize with scatterplots </li>
+    <li> Correlation Coefficient with Pearson's r. </li>
+    <li> P values helps you determine whether a specific feature has a statistically significant relationship. low p-value (0.05) means the variable is likely to be a meaningful predictor</li>
+</ul>
+
+
+<h2>Scoring Predictors<h2>
+<ul>
+    <li> R-Squared: Measures the proportion of variance in the target that is explained by the model. ranges from 0-1</li>
+    <li> Mean Squared Error: Average squared difference between predictions and actual values</li>
+    <li> Root Mean Squared Error: Square root of MSE </li>
+</ul>
+<p>Other things to note: z-scores are useful in understanding how many standard deviations a data point is from the mean. You can use this when standardizing data. With zscores outlires are usually < 3 or > 3</p>
+
+<h2>Useful Libraries</h2>
+<ul>
+    <li>Seaborn</li>
+    <li>Pandas</li>
+    <li>Scikit-learn</li>
+</ul>
+
+<h2> Scoring Full Models</h2>
+<p> F-Statistic tests wheter your model as a whole is statistically significant</p>
+<ul>
+    <li>a High F-value (with a low p-value) means your model explains a significant poriton of the variance in the target variable</li>
+    <li> it tests the null hypothesis</li>
+    <li> if the F-value is significant then at least one predictor is useful</li>
+</ul>
+
+<h2>Null Hypothesis</h2>
+<p> Basically you need to be able to say at least one variable has an impact on your target. You test the null hypothesis with P-values (individual variable) and Fscore (full models)</p>
